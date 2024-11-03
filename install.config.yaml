@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc: 
+      path: bash/bashrc
+      create: true
+    ~/.zshrc:
+      path: zsh/zshrc
+      create: true
+    #~/.vimrc: vimrc
+    ~/.shell:
+      path: shell
+      create: true
+    ~/.config/starship.toml:
+      path: config/starship.toml
+      create: true
+      force: true
+    
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

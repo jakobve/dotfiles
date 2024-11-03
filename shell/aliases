@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+alias clone-landscape="$HOME/scripts/clone-landscape.sh"
+alias reclone-landscape="$HOME/scripts/reclone-landscape.sh"
+
+alias k="kubectl"
